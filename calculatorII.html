@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 5: Calculator</title>
+    <meta charset="UTF-8">
+
+    <script>
+        window.addEventListener("load", init);
+        function init() {
+            calcBox.addEventListener("click", function(e) {
+                if (e.target !== e.currentTarget) {
+                    document.getElementById("result").value += e.target.value;
+                }
+            });
+            equal.addEventListener("click", function() {
+                document.getElementById("result").value = eval(document.getElementById("result").value);
+            });
+        }
+
+        /* no event bubbling
+        window.addEventListener("load", init);
+        function init() {
+            one.addEventListener("click", function() {enter(this.value);});
+            two.addEventListener("click", function() {enter(this.value);});
+            three.addEventListener("click", function() {enter(this.value);});
+            four.addEventListener("click", function() {enter(this.value);});
+            five.addEventListener("click", function() {enter(this.value);});
+            six.addEventListener("click", function() {enter(this.value);});
+            seven.addEventListener("click", function() {enter(this.value);});
+            eight.addEventListener("click", function() {enter(this.value);});
+            nine.addEventListener("click", function() {enter(this.value);});
+            zero.addEventListener("click", function() {enter(this.value);});
+            add.addEventListener("click", function() {enter(this.value);});
+            subtract.addEventListener("click", function() {enter(this.value);});
+            multiply.addEventListener("click", function() {enter(this.value);});
+            divide.addEventListener("click", function() {enter(this.value);});
+            period.addEventListener("click", function() {enter(this.value);});
+            equal.addEventListener("click", function() {calculate();});
+        }
+        function enter(val) {
+            document.getElementById("result").value += val;
+        }
+        function calculate() {
+            document.getElementById("result").value = eval(document.getElementById("result").value);
+        }
+        */
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Assignment 5: Calculator</h1><br>
+
+    <input type="text" readonly id="result">
+    <br>
+    <div id="calcBox">
+    <input type="button" id="seven" value="7">
+    <input type="button" id="eight" value="8">
+    <input type="button" id="nine" value="9">
+    <input type="button" id="divide" value="/">
+    <br>
+    <input type="button" id="four" value="4">
+    <input type="button" id="five" value="5">
+    <input type="button" id="six" value="6">
+    <input type="button" id="multiply" value="*">
+    <br>
+    <input type="button" id="one" value="1">
+    <input type="button" id="two" value="2">
+    <input type="button" id="three" value="3">
+    <input type="button" id="subtract" value="-">
+    <br>
+    <input type="button" id="zero" value="0">
+    <input type="button" id="period" value=".">
+    <input type="button" id="add" value="+">
+    <input type="button" id="equal" value="=">
+    </div>
+
+
+</body>
+</html>

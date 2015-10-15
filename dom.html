@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 5</title>
+    <meta charset="UTF-8">
+
+    <script>
+        //5
+        /*
+        window.addEventListener("load", clickAlert)
+        function clickAlert() {
+            var clickBtn = document.getElementById("clickBtn");
+            clickBtn.addEventListener("click", function(){
+                alert("I have been clicked");
+            });
+        }
+        */
+
+        //6
+        /*
+        window.addEventListener("load", google)
+        function google() {
+            var googLink = document.getElementById("redirect");
+            googLink.addEventListener("click", function(e){
+                alert("I have been clicked");
+                e.preventDefault();
+            });
+        }
+        */
+    </script>
+
+</head>
+
+<body>
+    <h1>Assignment 5: dom dom dom dom DOM!!!</h1><br>
+
+    <input type="button" id="clickBtn" value="Click if you're a Zak">
+    <br><br>
+    <a href="http://www.google.com" id="redirect">Visit Google</a><br><br>
+
+    <!--
+    //1
+   <input type="button" value="Click for question 1" onClick="clickMsg()">
+    -->
+
+    <script>
+        //1
+        /*
+        function clickMsg() {
+            alert("I have been clicked!");
+        }
+        */
+
+        //2
+        /*
+        var clickBtn = document.getElementById("clickBtn");
+        clickBtn.onclick = function() {
+            alert("I have been clicked");
+        }
+        */
+
+        //3
+        /*
+        var clickBtn = document.getElementById("clickBtn");
+        clickBtn.addEventListener("click", clickAlert);
+        function clickAlert() {
+            alert("I have been clicked");
+        }
+        */
+
+        //4
+        /*
+        var clickBtn = document.getElementById("clickBtn");
+        clickBtn.addEventListener("click", function(){
+            alert("I have been clicked");
+        });
+        */
+    </script>
+
+    <!--
+        //7
+    <form>
+        Input text here:<br>
+        <input type="text" name="textBox">
+        <br><br>
+        <input type="button" id="btnPlay" value="Click for question 7">
+    </form>
+
+    <script>
+        function disable() {
+        var userText = document.getElementsByName("textBox");
+        var btnDisable = document.getElementById("btnPlay");
+        if (userText.click == true) {
+            btnDisable = true;
+            }
+        }
+
+        var box = document.getElementsByName("textBox");
+            alert(box.value);
+
+    </script>
+    -->
+
+
+
+<!--     //9 <br>
+        <button onclick="startFunction()">Start</button>
+        <button onclick="stopFunction()">Stop</button>
+
+        <script>
+            var id;
+
+            function startFunction() {
+            id = setInterval(function() {
+                console.log("Javascript is fun!");
+                }, 2000);
+            }
+            function stopFunction() {
+            clearInterval(id);
+            }
+        </script>
+-->
+
+
+
+</body>
+</html>
